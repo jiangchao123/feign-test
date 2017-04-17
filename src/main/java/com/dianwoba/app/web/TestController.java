@@ -18,13 +18,13 @@ public class TestController {
     @Autowired
     private RemoteMultiplyService remoteMultiplyService;
 
-    @Value("${from}")
+/*    @Value("${from}")
     private String from;
 
     @RequestMapping("/from")
     public String from() {
         return this.from;
-    }
+    }*/
 
     @RequestMapping("/remote/add")
     public Integer add(Integer a,Integer b) {
@@ -34,14 +34,6 @@ public class TestController {
     @RequestMapping("/remote/multiply")
     public Integer multiply(Integer a,Integer b) {
         return remoteMultiplyService.multiply(a,b);
-    }
-
-    public void setFrom(String from) {
-        this.from = from;
-    }
-
-    public String getFrom() {
-        return from;
     }
 
 }
