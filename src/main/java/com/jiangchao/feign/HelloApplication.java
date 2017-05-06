@@ -12,7 +12,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.web.client.RestTemplate;
 
 /**
- * Created by shilintao on 17/4/20.
+ * Created by jiangchao on 17/5/6.
  */
 @SpringBootApplication
 @EnableDiscoveryClient
